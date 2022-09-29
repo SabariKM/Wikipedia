@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    list-style: none;
+    box-sizing: border-box;
+}
+body {
+    background-color: #f6f6f6;
+}
+nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    background-color: #fff;
+}
+.bg-shadow {
+    background-color: rgb(251, 251, 251);
+    background-image: linear-gradient(rgb(255, 255, 255) 50%, rgb(246, 246, 246) 100%);
+    height: 80px;
+    background-position: left bottom;
+    margin-top: -49px;
+    margin-bottom: -32px;
+}
+.navItemsOuter {
+    display: flex;
+    list-style: none;
+    font-size: 12px;
+    align-items: center;
+}
+.navItemsOuter li {
+    line-height: 18px;
+}
+.navItems {
+    color: #0645ad;
+    text-decoration: none;
+    padding: 0 5px;
+    font-size: 12px;
+}
+.anchor {
+    color: #0645ad;
+    text-decoration: none;
+}
+.anchor:hover {
+    text-decoration: underline;
+}
+.navItems:hover {
+    text-decoration: underline;
+}
+.navDisabledItem {
+    color: #54595d; 
+    vertical-align: middle;
+}
+.container {
+    display: flex;
+}
+.sideBar {
+    width: 15%;
+    padding: 0 20px;
+    height: 100%;
+}
+.mainContent {
+    width: 90%;
+}
+.wikiLogo {
+    width: 135px;
+    margin-top: -40px;
+    margin-bottom: 16px;
+}
+.wikiLogo img {
+    width: 100%;
+}
+.list1,.list2,.list3,.list4 {
+    margin-bottom: 12px;
+}
+.list1 li,.list2 li,.list3 li,.list4 li {
+    padding: 1px 0;
+}
+.navHead {
+    font-size: 12px;
+    color: #54595d;
+    background-image: linear-gradient(to right,rgba(200,204,209,0) 0,#c8ccd1 33%,#c8ccd1 66%,rgba(200,204,209,0) 100%);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 1px;
+    font-weight: normal;
+    padding: 4px 0;
+}
+.languageHead {
+    display: flex;
+    justify-content: space-between;
+}
+.navHead2 a {
+    color: #54595d;
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.navHead a:hover {
+    text-decoration: underline;
+    color: #0645ad;
+}
+.navMenubar {
+    display: flex;
+    justify-content: space-between;
+    /* border-left: 1px solid #a7d7f9; */
+    height: 40px;
+    align-items: center;
+    padding-right: 20px;
+}
+.navMenuLeft,.navMenuRight {
+    display: flex;
+    align-items: center;
+}
+.navMenuItems {
+    border-top: 0;
+    border-bottom: 0;
+    background-image: linear-gradient(to top,#77c1f6 0,#e8f2f8 1px,#ffffff 100%);
+    background-position: left bottom;
+    background-repeat: repeat-x;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.borderLeftNone {
+    border-left: none;
+}
+.activeNavMenu {
+    /* border: none;
+    border-bottom: 2px solid #fff; */
+    background-image: none;
+    background-color: #fff;
+}
+/* .borderLeft {
+    border-left: 1px solid #a7d7f9;
+} */
+.navMenuItems a {
+    text-decoration: none;
+    color: #0645ad;
+    font-size: 13px;
+    background-image: linear-gradient(to bottom,rgba(167,215,249,0) 0,#a7d7f9 100%);
+    background-repeat: no-repeat;
+    background-size: 1px 100%;
+    height: 40px;
+    padding: 4px 8px;
+    display: flex;
+    align-items: center;
+}
+.navMenuItems a:hover {
+    text-decoration: underline;
+}
+.activeNavMenu a{
+    color: #54595d !important;
+}
+.navSearchBar {
+    position: relative;
+    margin-left: 4px;
+}
+.searchIcon {
+    position: absolute;
+    top: 5px;
+    left: 250px;
+    cursor: pointer;
+}
+.searchBox {
+    background-color: rgba(255,255,255,0.5);
+    color: #000000;
+    border: 1px solid #a2a9b1;
+    border-radius: 2px;
+    padding: 5px 20px 5px 5px;
+    border-radius: 2px;
+    font-size: 13px; 
+    width: 273px;
+    height: 28px;
+}
+.searchBox:focus {
+    outline: 0;
+    border-color: #3366cc;
+    box-shadow: inset 0 0 0 1px #3366cc;
+}
+.contentOuter {
+    background-color: #fff;
+    border: 1px solid #a7d7f9;
+    border-collapse: collapse;
+    border-right: 0;
+    padding: 20px 24px 24px 24px;
+    margin-top: -1px;
+}
+.contentHead {
+    font-family: 'Linux Libertine','Georgia','Times',serif;
+    font-style: italic;
+    font-weight: 400;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #a2a9b1;
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+.description {
+    font-size: 13px;
+    margin-bottom: 14px;
+}
+.filmContent {
+    font-size: 14px;
+    position: relative;
+    line-height: 22px;
+    margin-bottom: 12px;
+}
+.bodyContentInner {
+    display: flex;
+}
+.movieBox {
+    background-color: rgb(248, 249, 250);
+    width: 265px;
+    font-size: 13px;
+    padding: 8px 6px;
+    border: 1px solid rgb(162, 169, 177);
+}
+.titleOfTheMovie {
+    font-size: 13px; 
+    font-style: italic;
+    text-align: center; 
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.moviePoster {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.moviePoster img {
+    width: 180px;
+}
+.releasePoster {
+    margin-top: 2px;
+}
+.movieDetails {
+    display:  flex;
+    justify-content: space-between;
+    padding: 4px 0;
+}
+.fieldName {
+    font-weight: 600;
+    max-width: 129px;
+    word-wrap: break-word;
+}
+.fieldValue {
+    word-wrap: break-word;
+    font-size: 13px;
+    text-align: left;
+    width: 129px;
+    line-height: 18px;
+}
+.leftContent {
+    margin-right: 8px;
+}
+.contentCount {
+    color: #333;
+    padding-right: 4px;
+}
+.contentBox {
+    width: 110px;
+    padding: 7px;
+    background-color: rgb(248, 249, 250);
+    border: 1px solid rgb(162, 169, 177);
+    margin-bottom: 16px;
+}
+.contentTitle {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 24px;
+}
+.fontNormal {
+    font-weight: 400;
+}
+.contentType {
+    font-size: 13px;
+    line-height: 24px;
+}
+.sideHead {
+    font-family: 'Linux Libertine','Georgia','Times',serif;
+    font-weight: 400;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #a2a9b1;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+.editOption {
+    font-weight: 400;
+    font-size: 13px;
+    padding-left: 8px;
+}
+.bulletList {
+    list-style: disc;
+    margin-left: 28px;
+    font-size: 14px;
+    line-height: 24px;
+}
+.premiseContent,.castContent,.productionContent,.musicContent,.releaseContent {
+    margin-bottom: 20px;
+}
+.trackSideHead {
+    font-weight: 600;
+    font-size: 14px;
+    text-align: left;
+    padding-bottom: 4px;
+}
+.notExist {
+    color: #ba0000;
+    text-decoration: none;
+}
+.notExist:hover {
+    text-decoration: underline;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+tr {
+    line-height: 24px;
+}
+abbr {
+    cursor: help;
+}
+.noOfRows,.lengthOftheSong {
+    text-align: right;
+    padding: 0 10px;
+}
+th.noOfRows {
+    width: 40px;
+}
+.songName,.lyricist,.singer {
+    text-align: left;
+}
+th {
+    background-color: #eee;
+}
+tr:nth-child(even) {
+    background-color: #f7f7f7;
+}
+.italic {
+    font-style: italic;
+}
+footer {
+    margin-left: 193px;
+    padding: 20px;
+    font-size: 13px;
+}
+.footerList {
+    padding: 8px 0;
+}
+.flexClass {
+    display: flex;
+    justify-content: space-between;    
+}
+.inlineClass,.inlineClass2 {
+    display: inline-block;
+    margin: 0 4px;
+    padding: 8px 0;    
+}
+.inlineClass2 {
+    padding: 0 2px;
+    margin: 0;    
+}
